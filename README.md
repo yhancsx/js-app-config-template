@@ -1,6 +1,12 @@
 ## Javascript application config template
 
-#### Tech STack
+#### Branches
+
+- [Javascript](https://github.com/yhancsx/js-app-config-template)
+- [Typescript](https://github.com/yhancsx/js-app-config-template/tree/typescript)
+- React (TBD)
+
+#### Tech Stack
 
 - webpack (webpac-dev-server)
 - babel

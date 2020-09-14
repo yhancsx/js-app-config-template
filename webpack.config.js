@@ -9,7 +9,7 @@ const isEnvDevelopment = NPM_LIFE_CYCLE_SCRIPT.includes('webpack-dev-server');
 
 module.exports = {
   mode: 'none',
-  entry: './src/index.js',
+  entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -48,7 +48,7 @@ module.exports = {
         ].filter(Boolean),
       },
       {
-        test: /\.js$/,
+        test: /\.(js|ts)$/,
         exclude: /\/node_modules\//,
         loader: 'babel-loader',
       },

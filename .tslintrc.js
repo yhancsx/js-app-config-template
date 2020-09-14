@@ -1,5 +1,11 @@
 module.exports = {
-  extends: ['airbnb', 'plugin:prettier/recommended', 'prettier/react'],
+  extends: [
+    'airbnb',
+    'plugin:prettier/recommended',
+    'prettier/react',
+    'tslint:latest',
+    'tslint-config-prettier',
+  ],
   env: {
     browser: true,
     commonjs: true,
