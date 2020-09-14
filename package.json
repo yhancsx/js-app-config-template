@@ -1,0 +1,58 @@
+{
+  "name": "js-app-config-template",
+  "version": "1.0.0",
+  "description": "config of javascript app that contains webpack babel eslint prettier",
+  "author": "yhancsx",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "html-webpack-plugin": "^4.4.1",
+    "mini-css-extract-plugin": "^0.11.2",
+    "prettier": "^2.1.1",
+    "terser-webpack-plugin": "^4.2.0",
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "babel-jest": "^26.3.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.3.0",
+    "jest": "^26.4.2",
+    "jest-watch-typeahead": "^0.6.1",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^4.0.1",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --host=0.0.0.0",
+    "deploy": "serve -s public/",
+    "test": "jest --coverage --watchAll"
+  },
+  "jest": {
+    "testMatch": [
+      "**/?(*.)+(spec|test).[jt]s?(x)"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|less|scss)$": "babel-jest"
+    },
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
+  }
+}
