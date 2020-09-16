@@ -4,7 +4,7 @@
 
 - [Javascript](https://github.com/yhancsx/js-app-config-template)
 - [Typescript](https://github.com/yhancsx/js-app-config-template/tree/typescript)
-- React (TBD)
+- [React](https://github.com/yhancsx/js-app-config-template/tree/react)
 
 #### Tech Stack
 
