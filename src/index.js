@@ -1,7 +1,10 @@
-import '../index.scss';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.scss';
 
-const app = document.createElement('div');
-app.innerText = 'hello world';
-app.className = 'hello-world';
-const root = document.getElementById('root');
-root.appendChild(app);
+ReactDOM.render(
+  <React.StrictMode>
+    <div className="hello-world">hello world</div>
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
