@@ -23,6 +23,7 @@ module.exports = {
     minimize: isEnvProduction,
     minimizer: [new TerserPlugin()],
   },
+  resolve: { extensionts: ['.js', '.ts'] },
   module: {
     rules: [
       {
