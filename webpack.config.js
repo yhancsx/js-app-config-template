@@ -9,7 +9,7 @@ const isEnvDevelopment = NPM_LIFE_CYCLE_SCRIPT.includes('webpack-dev-server');
 
 module.exports = {
   mode: 'none',
-  entry: './src/index.js',
+  entry: './index.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -22,6 +22,9 @@ module.exports = {
   optimization: {
     minimize: isEnvProduction,
     minimizer: [new TerserPlugin()],
+  },
+  resolve: {
+    extensions: ['.', '.js', '.jsx'],
   },
   module: {
     rules: [
@@ -48,7 +51,7 @@ module.exports = {
         ].filter(Boolean),
       },
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /\/node_modules\//,
         loader: 'babel-loader',
       },
